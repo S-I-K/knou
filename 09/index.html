@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=750" />
+    <meta name="viewport" content="width=750, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
     <title>방송대 뉴스레터 리뉴얼디자인 작업</title>
 </head>
@@ -21,7 +21,7 @@
                 </a>
             </td>
             <!-- SNS 리스트 -->
-            <td style="position: absolute; transform: translateY(50%)">
+            <td style="position: absolute; transform: translateY(50%); z-index: 2;">
                 <table>
                     <tr>
                         <!-- insta -->
@@ -60,10 +60,114 @@
         </tr>
 
         <!-- 지난호 바로가기 -->
-        <tr style="height: 250px; background: #157196; display: flex; align-items: center; justify-content: center;">
+        <tr style="height: 250px; background: #157196; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; margin-bottom: 167px;">
             <td style="transform: translateY(-42px);">
                 <a href="#" style="display: block; padding: 10px 65px; border: 1px solid #fff; font-size: 16px; font-weight: bold; color: #fff; text-decoration: none; font-family: var(--kr-font); letter-spacing: -.8px;">
                     지난호 바로가기 >
+                </a>
+            </td>
+            <td style="position: absolute; bottom: 0; transform: translateY(50%)">
+                <table cellpadding="0" cellspacing="0">
+                    <tr style="display: flex;">
+                        <td style="display: flex; margin-right: 18px;">
+                            <a href="#" style="display: flex;">
+                                <img src="./img/prev-newsletter01.png" alt="">
+                            </a>
+                        </td>
+                        <td style="display: flex; margin-right: 18px;">
+                            <a href="#" style="display: flex;">
+                                <img src="./img/prev-newsletter02.png" alt="">
+                            </a>
+                        </td>
+                        <td style="display: flex;">
+                            <a href="#" style="display: flex;">
+                                <img src="./img/prev-newsletter03.png" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- KNOU NEWS -->
+        <tr style="display: flex; margin-bottom: 30px">
+            <td style="display: flex;">
+                <img src="./img/knou-news.png" alt="">
+            </td>
+        </tr>
+        <tr style="display: flex; margin-bottom: 14px">
+            <td style="display: flex;">
+                <a href="#">
+                    <img src="./img/knou-news01.png" alt="">
+                </a>
+            </td>
+        </tr>
+        <tr style="display: flex; margin-bottom: 14px">
+            <td style="display: flex;">
+                <a href="#">
+                    <img src="./img/knou-news02.png" alt="">
+                </a>
+            </td>
+        </tr>
+        <tr style="display: flex; margin-bottom: 14px">
+            <td style="display: flex;">
+                <a href="#">
+                    <img src="./img/knou-news03.png" alt="">
+                </a>
+            </td>
+        </tr>
+        <tr style="display: flex; margin-bottom: 60px;">
+            <td style="display: flex;">
+                <a href="#">
+                    <img src="./img/knou-news04.png" alt="">
+                </a>
+            </td>
+        </tr>
+
+        <!-- KNOU LIB NEWS -->
+        <tr style="display:flex; margin-bottom:30px;">
+            <td style="display:flex;">
+                <img src="./img/knou-lib.png" alt="">
+            </td>
+        </tr>
+        <!-- txt lib news -->
+        <tr style="display:flex; margin-bottom:18px; justify-content:center;">
+            <td style="display:flex; margin-right:8px">
+                <a href="#" style="display:flex;">
+                    <img src="./img/knou-lib01.png" alt="">
+                </a>
+            </td>
+            <td style="display:flex; margin-right:8px">
+                <a href="#" style="display:flex;">
+                    <img src="./img/knou-lib02.png" alt="">
+                </a>
+            </td>
+            <td style="display:flex; margin-right:8px">
+                <a href="#" style="display:flex;">
+                    <img src="./img/knou-lib03.png" alt="">
+                </a>
+            </td>
+            <td style="display:flex;">
+                <a href="#" style="display:flex;">
+                    <img src="./img/knou-lib04.png" alt="">
+                </a>
+            </td>
+        </tr>
+        <!-- img lib news -->
+        <tr style="display:flex; margin-bottom:60px; justify-content:center;">
+            <td style="display:flex; margin-right:18px">
+                <a href="#" style="display:flex;">
+                    <img src="./img/knou-lib05.png" alt="">
+                </a>
+            </td>
+            <td style="display:flex; margin-right:18px">
+                <a href="#" style="display:flex;">
+                    <img src="./img/knou-lib06.png" alt="">
+                </a>
+            </td>
+            <td style="display:flex;">
+                <a href="#" style="display:flex;">
+                    <img src="./img/knou-lib07.png" alt="">
                 </a>
             </td>
         </tr>
@@ -77,6 +181,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: var(--kr-font) !important;
     }
     body {
         display: flex;
